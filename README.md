@@ -1,6 +1,6 @@
 # Sismoproject
 
-el desarrolo consta de 2 proyectos, sismologia_app el backend y sismofront para el front end
+El Desarrollo consta de 2 proyectos, sismologia_app el backend y sismofront para el front end
 
 # Proyecto Backend en Ruby
 
@@ -19,7 +19,7 @@ Este es un proyecto backend desarrollado en Ruby. Proporciona una API para inter
 
 ## Instalación
 
-1. Clona el repositorio a tu máquina local.
+1. Clona el repositorio sismologia_app a tu máquina local.
 2. Instala las dependencias ejecutando `bundle install`.
 3. Configura la base de datos en `config/database.yml`.
 4. Ejecuta las migraciones de la base de datos con `rails db:migrate`.
