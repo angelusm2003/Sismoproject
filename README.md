@@ -1,65 +1,65 @@
 # Sismoproject
 
-El Desarrollo consta de 2 proyectos, sismologia_app el backend y sismofront para el front end
+The development consists of 2 projects: `sismologia_app` (the backend) and `sismofront` (the frontend)
 
-# Proyecto Backend en Ruby
+# Backend project
 
-Este es un proyecto backend desarrollado en Ruby. Proporciona una API para interactuar con datos de características sísmicas.
+This is a backend project developed in Ruby. It provides an API to interact with sismic feature data.
 
-## Funcionalidades
+## Features
 
-- La API proporciona endpoints para obtener información sobre características sísmicas.
-- Los usuarios pueden agregar comentarios a las características sísmicas.
+- The API provides endpoints to get information about seismic features.
+- Users can add comments to seismic features.
 
-## Requisitos
+## Requirements
 
 - Ruby
-- Rails 
-- Base de datos PostgreSQL
+- Rails
+- PostgreSQL database
 
-## Instalación
+## Installation
 
-1. Clona el repositorio sismologia_app a tu máquina local.
-2. Instala las dependencias ejecutando `bundle install`.
-3. Configura la base de datos en `config/database.yml`.
-4. Ejecuta las migraciones de la base de datos con `rails db:migrate`.
-5. Inicia el servidor con `rails server`.
+1. Clone the `sismologia_app` repository to your local machine.
+2. Install the dependencies by running `bundle install`.
+3. Configure the database in `config/database.yml`.
+4. Run the database migrations with `rails db:migrate`.
+5. Start the server with `rails server`.
 
-## Uso
+## Usage
 
-Una vez que el servidor esté en funcionamiento, puedes interactuar con la API utilizando herramientas como cURL o Postman.
+Once the server is running, you can interact with the API using tools like cURL or Postman.
 
-Ejemplo de endpoints:
-- Obtener todas las características: `GET /api/features` tambien acepata los parametros mag_type y per_page
-- Agregar un comentario a una característica: `POST /api/features/:id/comments`
-  
-# Proyecto Frontend en React
+Example endpoints:
+- Get all features: `GET /api/features` (also accepts the parameters `mag_type` and `per_page`)
+- Add a comment to a feature: `POST /api/features/:id/comments`
 
-Este es un proyecto frontend desarrollado en React para interactuar con el backend de un sistema de seguimiento de características sísmicas.
+# Frontend Project
 
-## Descripción
+This is a frontend project developed in React to interact with the backend of a seismic feature tracking system.
 
-Este proyecto proporciona una interfaz de usuario para ver características sísmicas y agregar comentarios a las mismas. Utiliza React para la interfaz de usuario y consume datos del backend a través de una API REST.
+## Description
 
-## Requisitos
+This project provides a user interface to view seismic features and add comments to them. It uses React for the UI and consumes data from the backend via a REST API.
 
-- Node.js 
+## Requirements
+
+- Node.js
 - npm
-- Que se este ejecutando el backend previamente
+- The backend must be running beforehand
 
-## Instalación
+## Installation
 
-1. Clona el repositorio sismofront a tu máquina local.
-2. Abre una terminal y navega hasta la carpeta del proyecto.
-3. Ejecuta `npm install` para instalar las dependencias del proyecto.
-4. Configura la URL del backend en el archivo de configuración si es necesario.
+1. Clone the `sismofront` repository to your local machine.
+2. Open a terminal and navigate to the project folder.
+3. Run `npm install` to install the project dependencies.
+4. Configure the backend URL in the config file if needed.
 
-## Uso
+## Usage
 
-Una vez que las dependencias estén instaladas, puedes iniciar la aplicación ejecutando `npm start` o `yarn start`. Esto iniciará el servidor de desarrollo y abrirá la aplicación en tu navegador por defecto.
+Once the dependencies are installed, you can start the application by running `npm start` or `yarn start`. This will launch the development server and open the application in your default browser.
 
-La aplicación te permitirá ver características sísmicas y agregar comentarios a las mismas. Utiliza el link View Details para ver la info del url y el link comment para agregar un comentario al feature
+The application will allow you to view seismic features and add comments to them. Use the "View Details" link to see the info for a feature and the "Comment" link to add a comment.
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia MIT.
+This project is under the MIT License.
